@@ -5,23 +5,6 @@ import * as React from 'react';
 import { useHistory } from 'react-router-dom';
 import { FormContainer } from './FormContainer';
 import { FormFooter } from './FormFooter';
-// import styled from 'styled-components';
-// const Container = styled.div`
-//   grid-row: 2 / 5;
-//   grid-column: 2 / 5;
-//   display: flex;
-//   flex-direction: column;
-//   flex-wrap: wrap;
-//   align-content: center;
-//   justify-content: space-around;
-//   width: 100%;
-// `;
-
-// interface InputProps {
-//   id: string;
-//   label: string;
-//   type?: string;
-// };
 
 export const Login = () => {
   const [loading, setLoading] = React.useState<boolean>(false);

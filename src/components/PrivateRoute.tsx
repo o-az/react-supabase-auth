@@ -8,11 +8,6 @@ export const PrivateRoute: React.FC<RouteProps> = ({
   ...rest
 }) => {
   const { user } = useAuth();
-  /**
-   * in the RouteProps interface, the component is defined as optional, hence it
-   * might be undefined. So we need to check if it's falsy otherwise ts
-   * complains :/
-   */
   if (!Component) return null;
   return (
     <Route

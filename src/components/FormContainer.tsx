@@ -13,17 +13,11 @@ export const Container = styled.div`
   width: 100%;
 `;
 
-export const FormContainer: React.FC = ({ children }) => {
-  const [loading, setLoading] = React.useState<boolean>(false);
-  const handleLoading = async () => {
-    setLoading(!loading);
-  };
+export const FormContainer: React.FC = ({ children }) => (
+  <Container>
+    <Card hoverable shadow width="400px">
+      {children}
+    </Card>
+  </Container>
+);
 
-  return (
-    <Container>
-      <Card hoverable shadow width="400px">
-        {children}
-      </Card>
-    </Container>
-  );
-};
