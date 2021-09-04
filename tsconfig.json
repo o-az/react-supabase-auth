@@ -1,0 +1,70 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@App/*": [
+        "src/*"
+      ],
+      "@Components/*": [
+        "src/components/*"
+      ],
+      "@Contexts/*": [
+        "src/contexts/*"
+      ],
+      "lib/*": [
+        "common/*"
+      ]
+    },
+    // "target": "ESNext",
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "types": [
+      "@supabase/supabase-js",
+      // "@supabase/gotrue-js"
+    ],
+    "diagnostics": true,
+    "extendedDiagnostics": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "target": "ES6",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx"
+  },
+  "include": [
+    "src",
+    "./src/*.ts",
+    "./test/*.ts",
+    "./src/**/*.ts",
+    "./test/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules",
+    "out",
+    "dist",
+    "build"
+  ],
+  "extends": "@tsconfig/recommended/tsconfig.json",
+  // "ts-node": {
+  //   // It is faster to skip typechecking.
+  //   // Remove if you want ts-node to do typechecking.
+  //   "transpileOnly": true,
+  //   "files": true,
+  //   "compilerOptions": {
+  //     // compilerOptions specified here will override those declared below,
+  //     // but *only* in ts-node.  Useful if you want ts-node and tsc to use
+  //     // different options with a single tsconfig.json.
+  //   }
+  // },
+  "files": [],
+}
