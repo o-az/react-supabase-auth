@@ -31,9 +31,7 @@ export const App: React.FC = () => {
       <GlobalStyle />
       <Container>
         <Heading>
-          <Text h3>
-            React / Typescript / Supabase Auth
-          </Text>
+          <Text h3>React / Typescript / Supabase Auth</Text>
         </Heading>
         <Router>
           <AuthProvider>
