@@ -1,6 +1,5 @@
 Made this to demo how to use react with supabase to authenticate, login and create new
 account.
-
 ### To run:
 
 - `git clone git@github.com:Omar-Aziz/react-supabase-auth.git`
